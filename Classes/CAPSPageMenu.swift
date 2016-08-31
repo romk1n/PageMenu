@@ -48,7 +48,7 @@ public class MenuItemView: UIView {
         self.addSubview(titleLabel!)
     }
     
-    func setTitleText(text: NSString) {
+    public func setTitleText(text: NSString) {
         if titleLabel != nil {
             titleLabel!.text = text as String
             titleLabel!.numberOfLines = 0
