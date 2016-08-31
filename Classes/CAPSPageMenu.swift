@@ -26,7 +26,7 @@ import UIKit
     optional func didMoveToPage(controller: UIViewController, index: Int)
 }
 
-class MenuItemView: UIView {
+public class MenuItemView: UIView {
     // MARK: - Menu item view
     
     var titleLabel : UILabel?
@@ -91,7 +91,7 @@ public class CAPSPageMenu: UIViewController, UIScrollViewDelegate, UIGestureReco
     let menuScrollView = UIScrollView()
     let controllerScrollView = UIScrollView()
     var controllerArray : [UIViewController] = []
-    var menuItems : [MenuItemView] = []
+    public var menuItems : [MenuItemView] = []
     var menuItemWidths : [CGFloat] = []
     
     public var menuHeight : CGFloat = 34.0
