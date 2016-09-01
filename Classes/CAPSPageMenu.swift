@@ -29,7 +29,7 @@ import UIKit
 public class MenuItemView: UIView {
     // MARK: - Menu item view
     
-    var titleLabel : UILabel?
+    public var titleLabel : UILabel?
     var menuItemSeparator : UIView?
     
     func setUpMenuItemView(menuItemWidth: CGFloat, menuScrollViewHeight: CGFloat, indicatorHeight: CGFloat, separatorPercentageHeight: CGFloat, separatorWidth: CGFloat, separatorRoundEdges: Bool, menuItemSeparatorColor: UIColor) {
@@ -48,7 +48,7 @@ public class MenuItemView: UIView {
         self.addSubview(titleLabel!)
     }
     
-    public func setTitleText(text: NSString) {
+    func setTitleText(text: NSString) {
         if titleLabel != nil {
             titleLabel!.text = text as String
             titleLabel!.numberOfLines = 0
